@@ -87,9 +87,9 @@ def runIndex():
 # establish database connection: SYR
 try:
     db = pymysql.connect(host='flossdata.syr.edu',
-                     user='cfrankel',
-                     passwd='Marco1997',
-                     db='test',
+                     user='',
+                     passwd='',
+                     db='',
                      use_unicode=True,
                      charset="utf8mb4")
     cursor = db.cursor()
