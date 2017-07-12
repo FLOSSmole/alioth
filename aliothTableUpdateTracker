@@ -4,6 +4,7 @@ ALTER TABLE `al_projects` CHANGE `url` `url` VARCHAR(255) CHARACTER SET utf8 COL
 ALTER TABLE `al_projects` CHANGE `real_url` `real_url` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'homepage';
 ALTER TABLE `al_projects` CHANGE `unixname` `unixname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 ALTER TABLE `al_projects` CHANGE `short_desc` `short_desc` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects` CHANGE `real_url` `real_url` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT 'homepage';
 
 -- for al project indexes
 ALTER TABLE `al_project_indexes` CHANGE `unixname` `unixname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
