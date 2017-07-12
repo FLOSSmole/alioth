@@ -86,9 +86,9 @@ def runIndex():
 # establish database connection: SYR
 try:
     db = pymysql.connect(host='flossdata.syr.edu',
-                     user='',
-                     passwd='',
-                     db='',
+                     user='cfrankel',
+                     passwd='Marco1997',
+                     db='test',
                      use_unicode=True,
                      charset="utf8mb4")
     cursor = db.cursor()
@@ -183,6 +183,7 @@ try:
                                 print('registered: ', registered)
             runIndex()
             runProjects()
+            time.sleep(.5)  # So you are not locked out of the website like I was
         num = num + 1
 
 except pymysql.Error as err:
