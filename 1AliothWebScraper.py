@@ -34,6 +34,7 @@
 ################################################################
 
 import re
+import time
 import sys
 import pymysql
 from bs4 import BeautifulSoup
