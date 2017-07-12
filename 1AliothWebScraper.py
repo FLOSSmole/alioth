@@ -25,12 +25,12 @@
 #
 ################################################################
 # usage:
-# python 1AliothWebParser.py <datasource_id> <password>
+# python 1AliothWebScraper.py <datasource_id> <password>
 #
 # purpose:
 # Gets the  project name, url, real url, unixname, group id, short desc
 # and date registered for each Alioth project
-# Gets the index html and member html of each projected
+# Gets the index html and member html of each project
 ################################################################
 
 import re
