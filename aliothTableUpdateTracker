@@ -10,3 +10,7 @@ ALTER TABLE `al_projects` CHANGE `real_url` `real_url` VARCHAR(255) CHARACTER SE
 ALTER TABLE `al_project_indexes` CHANGE `unixname` `unixname` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 ALTER TABLE `al_project_indexes` CHANGE `indexhtml` `indexhtml` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
 ALTER TABLE `al_project_indexes` CHANGE `memberhtml` `memberhtml` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+--for al project tags
+ALTER TABLE `al_projects_tags` CHANGE `tag` `tag` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_tags` CHANGE `unixname` `unixname` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
