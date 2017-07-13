@@ -24,3 +24,37 @@ ALTER TABLE `al_project_members` CHANGE `unixname` `unixname` VARCHAR(255) CHARA
 ALTER TABLE `al_project_members_roles` CHANGE `username` `username` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 ALTER TABLE `al_project_members_roles` CHANGE `unixname` `unixname` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 ALTER TABLE `al_project_members_roles` CHANGE `role` `role` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project audience
+ALTER TABLE `al_projects_audience` CHANGE `audience` `audience` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_audience` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al projects environment
+ALTER TABLE `al_projects_environment` CHANGE `environment` `environment` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_environment` CHANGE `subenvironment` `subenvironment` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_environment` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project langauge
+ALTER TABLE `al_projects_language` CHANGE `language` `language` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_language` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project license
+ALTER TABLE `al_projects_license` CHANGE `license` `license` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_license` CHANGE `sublicense` `sublicense` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_license` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project operating system
+ALTER TABLE `al_projects_os` CHANGE `os` `os` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_os` CHANGE `subos` `subos` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_os` CHANGE `subos2` `subos2` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_os` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project status
+ALTER TABLE `al_projects_status` CHANGE `status` `status` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_status` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+
+-- for al project topic
+ALTER TABLE `al_projects_topic` CHANGE `topic` `topic` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
+ALTER TABLE `al_projects_topic` CHANGE `subtopic` `subtopic` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_topic` CHANGE `subtopic2` `subtopic2` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+ALTER TABLE `al_projects_topic` CHANGE `unixname` `unixname` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
